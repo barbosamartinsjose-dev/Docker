@@ -1,0 +1,6 @@
+services:
+  curriculo-web:
+    build: .
+    ports:
+      - "8080:80"
+    container_name: curriculo_jose

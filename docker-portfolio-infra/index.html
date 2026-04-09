@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Profissional | José Barbosa Martins</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark-blue: #0f172a;
+            --bg-gray: #f1f5f9;
+            --text-main: #334155;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background-color: var(--bg-gray); color: var(--text-main); margin: 0; padding: 0; line-height: 1.6; }
+        
+        header { background-color: var(--dark-blue); color: white; padding: 40px 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 2.2rem; }
+        header p { margin: 10px 0 0; color: #60a5fa; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        .contact-bar { margin-top: 15px; font-size: 0.85rem; color: #94a3b8; }
+
+        .main-container { max-width: 1100px; margin: 30px auto; padding: 0 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        
+        .card { background: white; border-radius: 12px; padding: 25px; box-shadow: var(--card-shadow); border: 1px solid #e2e8f0; }
+        .full-width { grid-column: 1 / -1; }
+
+        h2 { font-size: 1.25rem; color: var(--dark-blue); margin-top: 0; border-bottom: 2px solid var(--primary); padding-bottom: 8px; margin-bottom: 20px; }
+        
+        .skill-group { margin-bottom: 15px; }
+        .skill-title { font-weight: bold; font-size: 0.9rem; display: block; margin-bottom: 5px; color: var(--primary); }
+        .badge { display: inline-block; background: #eff6ff; color: #1e40af; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; margin: 0 4px 6px 0; border: 1px solid #bfdbfe; }
+
+        .cert-list { list-style: none; padding: 0; margin: 0; }
+        .cert-list li { margin-bottom: 10px; padding-left: 20px; position: relative; font-size: 0.9rem; }
+        .cert-list li::before { content: "✔"; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
+
+        .exp-item { margin-bottom: 25px; }
+        .exp-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+        .company { font-weight: bold; font-size: 1.1rem; color: var(--dark-blue); }
+        .date-tag { background: #1e293b; color: white; font-size: 0.75rem; padding: 4px 10px; border-radius: 4px; }
+        .role { color: var(--primary); font-weight: 600; font-size: 0.9rem; margin-bottom: 8px; }
+        .exp-list { padding-left: 18px; margin: 0; font-size: 0.88rem; color: #475569; }
+        .exp-list li { margin-bottom: 6px; }
+
+        footer { text-align: center; padding: 30px; font-size: 0.8rem; color: #94a3b8; }
+
+        @media (max-width: 768px) { .main-container { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>José Barbosa Martins</h1>
+    <p>Analista de Infraestrutura de TI | Redes & Observabilidade</p>
+    <div class="contact-bar">
+        Goiânia - GO | contatojosebarbosamartins@gmail.com | (62) 9 8228-8862
+    </div>
+</header>
+
+<div class="main-container">
+    
+    <section class="card full-width">
+        <h2>Resumo Profissional</h2>
+        <p style="margin: 0;">
+            Profissional de TI com sólida experiência em sustentação de ambientes de missão crítica e implantação de infraestrutura do zero. 
+            Especialista em montagem de ativos de rede, administração de servidores Windows/Linux e gestão de segurança com foco em alta disponibilidade e monitoramento avançado com Zabbix e Grafana.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Skills Técnicas</h2>
+        <div class="skill-group">
+            <span class="skill-title">Redes e Segurança</span>
+            <span class="badge">Fortigate</span> <span class="badge">Unifi</span> <span class="badge">VPN</span> <span class="badge">Firewall</span>
+        </div>
+        <div class="skill-group">
+            <span class="skill-title">Observabilidade</span>
+            <span class="badge">Zabbix</span> <span class="badge">Grafana</span>
+        </div>
+        <div class="skill-group">
+            <span class="skill-title">Sistemas e Backup</span>
+            <span class="badge">Windows Server</span> <span class="badge">Linux</span> <span class="badge">Veeam Backup</span>
+        </div>
+        <div class="skill-group">
+            <span class="skill-title">Dados e Automação</span>
+            <span class="badge">SQL</span> <span class="badge">Python</span> <span class="badge">Power BI</span>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Certificações Técnicas</h2>
+        <ul class="cert-list">
+            <li>Fortinet: FCF - Technical Introduction to Cybersecurity</li>
+            <li>Fortigate: Configuração e Administração (NSE/FCP)</li>
+            <li>Bitdefender: Especialista em Segurança de Endpoint</li>
+            <li>SQL: Formação SQL Database Specialist</li>
+            <li>Python: Fundamentos para Análise de Dados e Data Science</li>
+            <li>Scrum: Agilidade e Gestão de Fluxos</li>
+            <li>Git e GitHub: Controle de Versionamento</li>
+        </ul>
+    </section>
+
+    <section class="card full-width">
+        <h2>Experiência Profissional</h2>
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="company">EXAkernel Suporte Técnico</span>
+                <span class="date-tag">Junho de 2024 - Atual</span>
+            </div>
+            <div class="role">N1 Pleno</div>
+            <ul class="exp-list">
+                <li>Montagem física e lógica de infraestrutura de novas lojas (O Boticário).</li>
+                <li>Execução de testes de restore em ambiente Veeam (Ambiente Clínico).</li>
+                <li>Implementação de monitoramento via Zabbix e Grafana.</li>
+                <li>Administração de Windows Server (AD, DNS, DHCP) e Virtualização.</li>
+                <li>Suporte remoto e presencial focado em resolução ágil de incidentes.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="card full-width">
+        <h2>Formação Acadêmica</h2>
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+            <span><strong>Tecnólogo em Redes de Computadores</strong> - Estácio</span>
+            <span style="color: var(--primary); font-weight: bold;">Conclusão: Dezembro de 2026</span>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 José Barbosa Martins. Projeto rodando em Docker para prática de Infraestrutura.
+</footer>
+
+</body>
+</html>
